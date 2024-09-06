@@ -15,15 +15,12 @@ class Contact(models.Model):
 
 
 class About(models.Model):
-    image = models.ImageField(upload_to='Images/about')
     title = models.CharField(max_length=70)
     description = models.TextField()
     
     def __str__(self):
         return self.title
     
-
-
 class Portfolio(models.Model):
     image = models.ImageField(upload_to='Images/portfolio')
     title = models.CharField(max_length=70)
@@ -32,7 +29,6 @@ class Portfolio(models.Model):
     def __str__(self):
         return self.title
     
-
 class We_do(models.Model):
     image = models.ImageField(upload_to='Images/we_do')
     title = models.CharField(max_length=70)

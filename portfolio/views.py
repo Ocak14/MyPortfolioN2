@@ -30,6 +30,11 @@ class ContactFormView(FormView):
 def home_view(request):
  return render(request=request,template_name='index.html')
 
+# class IndexListView(ListView):
+#   model = Index
+#   template_name = 'index.html'
+#   context_object_name = 'index'
+  
 class AboutListView(ListView):
   model = About
   template_name = 'about.html'

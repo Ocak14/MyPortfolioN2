@@ -65,10 +65,12 @@
          <div class="container">
             <div class="row">
                <div class="col-md-12">
+                  {% for about in about %}
                   <div class="titlepage text_align_center">
-                     <h2>About Company</h2>
-                     <p>There are many variations of passages of Lorem Ipsum available, but the majority have </p>
+                     <h2>{{ about.title}}</h2>
+                     <p>{{ about.description }}</p>
                   </div>
+                  {% endfor %}
                </div>
             </div>
          </div>
