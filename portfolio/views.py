@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .models import Contact,About,Portfolio,We_do
 from django.views.generic.edit import FormView
+from django.views.generic import DetailView
 from .forms import ContactForm
 from .bot import send_message
 from django.views.generic.list import ListView
@@ -48,6 +49,7 @@ class PortfolioListView(ListView):
 
 
 class We_doListView(ListView):
-  model = We_do
-  template_name = 'we_do.html'
-  context_object_name = 'we_do'
+    model = We_do
+    template_name = 'we_do.html'
+    context_object_name = 'we_do'
+  
