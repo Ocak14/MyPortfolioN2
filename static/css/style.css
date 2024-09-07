@@ -540,8 +540,8 @@ ul.email li i {
 /** about **/
 
 .about {
-     background: url(../images/python1.jpg);
-     background-size:cover;
+     background: url(../images/python.jpg);
+     background-size:contain;
      background-position: center;
      background-repeat: no-repeat;
      height: 100vh;
